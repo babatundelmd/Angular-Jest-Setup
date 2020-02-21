@@ -12,6 +12,8 @@ Run `npm test` to execute the unit tests via [Jest](https://https://jestjs.io/).
 
 ### Angular Jest Setup
 
+----
+
 - ```npm install -D jest jest-preset-angular @types/jest```
 
 **This will install `jest`, `@types/jest`, `jest-preset-angular` as devDependencies needed to run with Angular projects.
@@ -33,7 +35,8 @@ underneath `devDependencies.`
 
 - #### Add the following to the `root` directory.
 
-    - `tsconfig.spec.json` <br>
+    - `tsconfig.spec.json`
+        <br\>
      
     ```
     {
@@ -55,7 +58,8 @@ underneath `devDependencies.`
     }
     ```
     
-    - `setupJest.ts` <br>
+    - `setupJest.ts` 
+    <br\>
     
     
     ```
@@ -96,7 +100,8 @@ underneath `devDependencies.`
     });
     ```
     
-    - `jest.config.js` <br>
+    - `jest.config.js`
+        <br\>
     
     
     ```
@@ -132,7 +137,8 @@ underneath `devDependencies.`
     ```
     
     
-    - `jest-config.helper.ts` <br>
+    - `jest-config.helper.ts` 
+        <br\>
     
     
     ```
