@@ -35,8 +35,8 @@ underneath `devDependencies.`
 
 - #### Add the following to the `root` directory.
 
-    - `tsconfig.spec.json`
-        <br\>
+   `tsconfig.spec.json`
+      
      
     ```
     {
@@ -58,8 +58,8 @@ underneath `devDependencies.`
     }
     ```
     
-    - `setupJest.ts` 
-    <br\>
+    `setupJest.ts` 
+   
     
     
     ```
@@ -67,14 +67,14 @@ underneath `devDependencies.`
     import './jestGlobalMocks';
     ```
     
-    - `polyfills.ts`
+    `polyfills.ts`
     
-    
+
     ```
     import 'zone.js/dist/zone';
     ```
     
-    - `jestGlobalMocks.ts` <br>
+    `jestGlobalMocks.ts`
     
     
     ```
@@ -100,9 +100,8 @@ underneath `devDependencies.`
     });
     ```
     
-    - `jest.config.js`
-        <br\>
-    
+   `jest.config.js`
+       
     
     ```
     module.exports = {
@@ -137,9 +136,8 @@ underneath `devDependencies.`
     ```
     
     
-    - `jest-config.helper.ts` 
-        <br\>
-    
+    `jest-config.helper.ts` 
+       
     
     ```
     import { ComponentFixture, TestBed, TestModuleMetadata } from '@angular/core/testing';
