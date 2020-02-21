@@ -50,17 +50,23 @@ underneath `devDependencies.`
             "**/*.d.ts"
         ]
     }
+    
     ```
     - `setupJest.ts`
+    
     ```
     import 'jest-preset-angular';
     import './jestGlobalMocks';
     ```
+    
     - `polyfills.ts`
+    
     ```
     import 'zone.js/dist/zone';
     ```
+    
     - `jestGlobalMocks.ts`
+    
     ```
     Object.defineProperty(window, 'CSS', { value: null });
     Object.defineProperty(document, 'doctype', {
@@ -83,7 +89,9 @@ underneath `devDependencies.`
         },
     });
     ```
+    
     - `jest.config.js`
+    
     ```
     module.exports = {
         globals: {
@@ -115,7 +123,10 @@ underneath `devDependencies.`
         ]
     };
     ```
+    
     - `jest-config.helper.ts`
+    
+    
     ```
     import { ComponentFixture, TestBed, TestModuleMetadata } from '@angular/core/testing';
     import { Type } from '@angular/core';
@@ -160,9 +171,11 @@ underneath `devDependencies.`
         });
     }
     ```
+    
 Remove `test.ts` from the `src` directory
 
 Remove the following from `package.json`
+
 ```
     "karma": "~4.0.0",
     "karma-chrome-launcher": "~2.2.0",
@@ -170,6 +183,7 @@ Remove the following from `package.json`
     "karma-jasmine": "~1.1.2",
     "karma-jasmine-html-reporter": "^0.2.2",
 ```
+
 Add `"test": "jest src/.*\\.spec.ts -c jest.config.js",` to the npm `script`
 
 
