@@ -33,9 +33,8 @@ underneath `devDependencies.`
 
 - #### Add the following to the `root` directory.
 
-    - `tsconfig.spec.json`
-    
-    
+    - `tsconfig.spec.json` <br>
+     
     ```
     {
         "extends": "./tsconfig.json",
@@ -56,7 +55,7 @@ underneath `devDependencies.`
     }
     ```
     
-    - `setupJest.ts`
+    - `setupJest.ts` <br>
     
     
     ```
@@ -71,7 +70,7 @@ underneath `devDependencies.`
     import 'zone.js/dist/zone';
     ```
     
-    - `jestGlobalMocks.ts`
+    - `jestGlobalMocks.ts` <br>
     
     
     ```
@@ -97,7 +96,7 @@ underneath `devDependencies.`
     });
     ```
     
-    - `jest.config.js`
+    - `jest.config.js` <br>
     
     
     ```
@@ -133,7 +132,7 @@ underneath `devDependencies.`
     ```
     
     
-    - `jest-config.helper.ts`
+    - `jest-config.helper.ts` <br>
     
     
     ```
