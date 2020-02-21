@@ -17,6 +17,7 @@ Run `npm test` to execute the unit tests via [Jest](https://https://jestjs.io/).
 **This will install `jest`, `@types/jest`, `jest-preset-angular` as devDependencies needed to run with Angular projects.
 
 - Add
+
 ```
 },
     "jest": {
@@ -31,7 +32,10 @@ Run `npm test` to execute the unit tests via [Jest](https://https://jestjs.io/).
 underneath `devDependencies.`
 
 - #### Add the following to the `root` directory.
+
     - `tsconfig.spec.json`
+    
+    
     ```
     {
         "extends": "./tsconfig.json",
@@ -50,9 +54,10 @@ underneath `devDependencies.`
             "**/*.d.ts"
         ]
     }
-    
     ```
+    
     - `setupJest.ts`
+    
     
     ```
     import 'jest-preset-angular';
@@ -61,11 +66,13 @@ underneath `devDependencies.`
     
     - `polyfills.ts`
     
+    
     ```
     import 'zone.js/dist/zone';
     ```
     
     - `jestGlobalMocks.ts`
+    
     
     ```
     Object.defineProperty(window, 'CSS', { value: null });
@@ -91,6 +98,7 @@ underneath `devDependencies.`
     ```
     
     - `jest.config.js`
+    
     
     ```
     module.exports = {
@@ -123,6 +131,7 @@ underneath `devDependencies.`
         ]
     };
     ```
+    
     
     - `jest-config.helper.ts`
     
