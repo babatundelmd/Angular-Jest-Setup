@@ -169,6 +169,9 @@ Remove the following from `package.json`
     "karma-coverage-istanbul-reporter": "~2.0.1",
     "karma-jasmine": "~1.1.2",
     "karma-jasmine-html-reporter": "^0.2.2",
+    **In devDependencies** remove the following:
+    "@types/jasmine": "~2.8.8",
+    "@types/jasminewd2": "~2.0.3",
 ```
 Add `"test": "jest src/.*\\.spec.ts -c jest.config.js",` to the npm `script`
 
