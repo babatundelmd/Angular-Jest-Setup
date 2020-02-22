@@ -16,7 +16,7 @@ Run `npm test` to execute the unit tests via [Jest](https://https://jestjs.io/).
 
 - ```npm install -D jest jest-preset-angular @types/jest```
 
-**This will install `jest`, `@types/jest`, `jest-preset-angular` as devDependencies needed to run with Angular projects.
+This will install `jest`, `@types/jest`, `jest-preset-angular` as devDependencies needed to run with Angular projects.
 
 - Add
 
