@@ -12,11 +12,14 @@ Run `npm test` to execute the unit tests via [Jest](https://https://jestjs.io/).
 
 ### Angular Jest Setup
 
+----
+
 - ```npm install -D jest jest-preset-angular @types/jest```
 
 **This will install `jest`, `@types/jest`, `jest-preset-angular` as devDependencies needed to run with Angular projects.
 
 - Add
+
 ```
 },
     "jest": {
@@ -31,7 +34,10 @@ Run `npm test` to execute the unit tests via [Jest](https://https://jestjs.io/).
 underneath `devDependencies.`
 
 - #### Add the following to the `root` directory.
-    - `tsconfig.spec.json`
+
+   `tsconfig.spec.json`
+      
+     
     ```
     {
         "extends": "./tsconfig.json",
@@ -51,16 +57,26 @@ underneath `devDependencies.`
         ]
     }
     ```
-    - `setupJest.ts`
+    
+    `setupJest.ts` 
+   
+    
+    
     ```
     import 'jest-preset-angular';
     import './jestGlobalMocks';
     ```
-    - `polyfills.ts`
+    
+    `polyfills.ts`
+    
+
     ```
     import 'zone.js/dist/zone';
     ```
-    - `jestGlobalMocks.ts`
+    
+    `jestGlobalMocks.ts`
+    
+    
     ```
     Object.defineProperty(window, 'CSS', { value: null });
     Object.defineProperty(document, 'doctype', {
@@ -83,7 +99,10 @@ underneath `devDependencies.`
         },
     });
     ```
-    - `jest.config.js`
+    
+   `jest.config.js`
+       
+    
     ```
     module.exports = {
         globals: {
@@ -115,7 +134,11 @@ underneath `devDependencies.`
         ]
     };
     ```
-    - `jest-config.helper.ts`
+    
+    
+    `jest-config.helper.ts` 
+       
+    
     ```
     import { ComponentFixture, TestBed, TestModuleMetadata } from '@angular/core/testing';
     import { Type } from '@angular/core';
@@ -160,9 +183,11 @@ underneath `devDependencies.`
         });
     }
     ```
+    
 Remove `test.ts` from the `src` directory
 
 Remove the following from `package.json`
+
 ```
     "karma": "~4.0.0",
     "karma-chrome-launcher": "~2.2.0",
@@ -173,6 +198,7 @@ Remove the following from `package.json`
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
 ```
+
 Add `"test": "jest src/.*\\.spec.ts -c jest.config.js",` to the npm `script`
 
 
