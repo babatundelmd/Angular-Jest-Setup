@@ -36,8 +36,8 @@ underneath `devDependencies.`
 - #### Add the following to the `root` directory.
 
    `tsconfig.spec.json`
-      
-     
+
+
     ```
     {
         "extends": "./tsconfig.json",
@@ -57,26 +57,26 @@ underneath `devDependencies.`
         ]
     }
     ```
-    
-    `setupJest.ts` 
-   
-    
-    
+
+    `setupJest.ts`
+
+
+
     ```
     import 'jest-preset-angular';
     import './jestGlobalMocks';
     ```
-    
+
     `polyfills.ts`
-    
+
 
     ```
     import 'zone.js/dist/zone';
     ```
-    
+
     `jestGlobalMocks.ts`
-    
-    
+
+
     ```
     Object.defineProperty(window, 'CSS', { value: null });
     Object.defineProperty(document, 'doctype', {
@@ -99,10 +99,10 @@ underneath `devDependencies.`
         },
     });
     ```
-    
+
    `jest.config.js`
-       
-    
+
+
     ```
     module.exports = {
         globals: {
@@ -134,11 +134,11 @@ underneath `devDependencies.`
         ]
     };
     ```
-    
-    
-    `jest-config.helper.ts` 
-       
-    
+
+
+    `jest-config.helper.ts`
+
+
     ```
     import { ComponentFixture, TestBed, TestModuleMetadata } from '@angular/core/testing';
     import { Type } from '@angular/core';
@@ -183,7 +183,7 @@ underneath `devDependencies.`
         });
     }
     ```
-    
+
 Remove `test.ts` from the `src` directory
 
 Remove the following from `package.json`
@@ -200,6 +200,8 @@ Remove the following from `package.json`
 ```
 
 Add `"test": "jest src/.*\\.spec.ts -c jest.config.js",` to the npm `script`
+
+Add `"jest-environment-jsdom-fourteen": "^1.0.1",` to devDependencies and `npm i`
 
 
 
